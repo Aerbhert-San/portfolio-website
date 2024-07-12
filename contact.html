@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+           /*body*/
+       body,html{
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        background-color: black;
+    }
+    
+          /*main container*/
+          #main-container{
+           display:flex;
+            height: 100%;
+            width: 100%;
+            flex-direction: column;
+        }
+
+        #contact-top-container{
+            background-color: black;
+            height: 15%;
+            width: 100%;
+            box-sizing: border-box;
+           
+        }
+
+/*=================bottom containeer=================*/
+        #contact-bottom-container{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+            /*left container*/
+        #contact-left-container{
+            display: flex;
+            height: 100vh;
+            width: 50%;
+            box-sizing: border-box;
+            flex-direction: column;
+            padding: 1%;
+            text-align: center;
+           
+        }
+        /*right container*/
+        #contact-right_container{
+            justify-content: space-between;
+            height: 100vh;
+            width: 50%;
+            display: flex;
+           
+           
+        }
+     
+         /*image container, sa kanan ung fb...*/
+         #image-container{
+            height: 100vh;
+            width: 20%;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            padding: 1%;
+            
+         }
+           
+         /*ito ung naka list o katabi ng image*/
+         #text-container{
+            height: 100vh;
+            width: 80%;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            margin-top: -5%;
+         }
+
+/*----heading-------*/  
+        h1{
+            color: white;
+            text-align: center;
+            font-family: Arial;
+            font-size: 7vh;
+        }
+
+/*right side mga input at submit*/
+        input[type="text"]{
+            width: 80%;
+            margin-top: 5%;
+            box-sizing: border-box;
+            border-radius: 4vh;
+            height: 8vh;
+            border:4px solid white;
+            background-color: black;
+            color: white;
+            font-size: 4vh;
+            font-family: Calibri;
+            padding: 10px;
+            margin-bottom: 1vh;
+        
+
+            
+        }
+/*SUBMIT BUTTON*/
+        input[type="submit"]{
+            padding:  10px;
+           justify-content: center;
+            width: 40%;
+            border: 3px solid white;
+            color: black;
+            background-color:white;
+            height: 6vh;
+            font-size: 2.5vh;
+            text-align: center;
+            border-radius: 5vh;
+            cursor: pointer;
+            margin-top: 10%;
+           
+        }
+        input[type="submit"]:hover{
+            background-color: rgb(171, 202, 235);
+            border:2px solid  rgb(171, 202, 235);
+            color: white;
+        }
+/*message*/
+        #ms{
+            width: 80%;
+            margin-top: 5%;
+            box-sizing: border-box;
+            border-radius: 4vh;
+            height: 25vh;
+            border:4px solid white;
+            background-color: black;
+            color: white;
+            font-size: 4vh;
+            font-family: Calibri;
+            padding: 10px;
+            margin-bottom: 1vh;
+            resize: none;
+        }
+
+
+
+
+
+
+        /*left images*/
+        .contact-image{
+            width: 70%;
+            height: 8.8vh;
+            margin-left: 30%;
+            margin-top: 38%;
+        }
+        /*list*/
+        ul li{
+            color: white;
+            font-size: 3vh;
+            list-style-type: none;
+            margin-top: 20%;
+            font-family: Calibri;
+            font-weight: 100;
+        }
+
+    /*=================responsive===============================*/
+        @media(max-width:600px){
+            
+          /*main container*/
+          #main-container{
+            height: 100%;
+             flex-direction: column;
+        }   
+        #contact-top-container{
+            height: 10%;
+            width: 100%;
+            box-sizing: border-box;
+         
+           
+        }
+        h1{
+            font-size: 4vh;
+        }
+        #contact-bottom-container{
+            flex-direction: column;
+        }
+           /*right container*/
+           #contact-right_container{
+    
+            height: 30vh;
+            width: 100%;
+            order: -1;
+          
+           
+        }
+         
+         /*image container, sa kanan ung fb...*/
+         #image-container{
+            height: 30vh;
+            width: 20%;
+            box-sizing: border-box;
+            flex-direction: column;
+            padding: 1%;
+            
+         }
+        #text-container{
+            height: 100vh;
+            width: 80%;
+            box-sizing: border-box;
+            flex-direction: column;
+           
+         }
+            /*left images*/
+        .contact-image{
+            width: 40%;
+            height: 3vh;
+            margin-left: 60%;
+            margin-top: 21%;
+        }
+
+
+        /*list*/
+        ul li{
+            color: white;
+            font-size: 1vh;
+            list-style-type: none;
+            margin-top: 10%;
+            font-family: Calibri;
+            font-weight: 80;
+            margin-right: 60%;
+        }
+         /*left container*/
+         #contact-left-container{
+                box-sizing: border-box;
+                width:100%;
+                flex-direction: column;
+           
+        }
+
+
+        /*right(baba) side mga input at submit*/
+        input[type="text"]{
+            width: 80%;
+            margin-top: 5%;
+            box-sizing: border-box;
+            border-radius: 4vh;
+            height: 4vh;
+            border:2px solid white;
+            font-size: 2vh;
+            font-family: Calibri;
+            padding: 10px;
+            margin-bottom: 1vh;
+        
+
+            
+        }
+/*SUBMIT BUTTON*/
+        input[type="submit"]{
+            padding:  10px;
+           justify-content: center;
+            width: 40%;
+            border: 2px solid white;
+            color: black;
+            height: 4vh;
+            font-size: 1.5vh;
+            margin-top: 8%;
+           
+        }
+        /*message*/
+        #ms{
+            width: 80%;
+            margin-top: 5%;
+            box-sizing: border-box;
+            border-radius: 4vh;
+            height: 12vh;
+            border:2px solid white;
+            font-size: 2vh;
+            padding: 8px;
+            margin-bottom: 1vh;
+            resize: none;
+        }
+
+        }
+
+    </style>
+</head>
+<body>
+<!--===================== main container =========================--> 
+    <div id="main_container">
+    <!------- top container ---------->
+        <div id="contact-top-container">
+            <h1>Contacts</h1>
+        </div>
+        <!-- bottom container-->
+        <div id="contact-bottom-container">
+<!------left container ------->
+        <div id="contact-left-container">
+        <!-----=== form   ==== ----->
+            <form id="myForm" method="post">
+<!-- name input-->            
+            <input type="text" placeholder="Name" id="name_input" required>
+<!-- email input-->           
+            <input type="text" placeholder="Email" id="email_input" required>
+<!-- message input-->          
+            <textarea  id="ms" placeholder="Message" type="text" id="message_input" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+        </div>
+        <!-----right container------->
+        <div id="contact-right_container">
+            <!-- images on right side-->
+        <div id="image-container">
+            <img  class="contact-image" src="fb.png">
+            <img  class="contact-image" src="location.png">
+            <img  class="contact-image" src="messanger.png">
+            <img  class="contact-image" src="call.png">
+            <img  class="contact-image" src="email.png">
+        </div>
+            <!-- text on right side-->
+        <div id="text-container">
+            <ul>
+                <li>Aerbhert John M. Sanchez</li>
+                <li>Purok Maulawin, Isabang Lucena City</li>
+                <li>@AerbhertJohnSanchez</li>
+                <li>0961-476-4364</li>
+                <li>@ajsanchez942@gmail.com</li>
+            </ul> 
+        </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        
+        /*body*/
+       body,html{
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        background-color: black;
+    }
+    /*top container*/
+        #top-container{
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+           padding-right: 10px;
+            margin-top: 8%;
+            margin-left: 10%;
+            margin-right: 10%;
+          } /*top containr*/
+        #top-container img{
+            width: 50vh;
+            height: 25vh;
+            margin-top: 3%;
+            border: 4PX solid white;
+            border-radius: 4vh;
+            display: flex;
+           
+
+            
+        }
+
+            /*bottom container*/
+            #bottom-container{
+                margin-top: 8%;
+                justify-content: center;
+                width: 100%;
+                display: flex;
+            }
+            #bottom-container img{
+            width: 50vh;
+            height: 25vh;
+            margin-top: 3%;
+            border: 4PX solid white;
+            border-radius: 4vh;
+          
+        }
+
+        /*=================responsive==============*/
+
+        @media(max-width:600px){
+            #top-container{
+                height: 100%;
+                flex-direction: column;
+                justify-content: center;
+                height: 40vh;
+          
+          }
+           /*top containr*/
+        #top-container img{
+            width: 30vh;
+            height: 15vh;
+            margin-top: 3%;
+            border: 2PX solid white;
+            border-radius: 4vh;
+            flex-direction: column;
+            margin-left: 20%;
+        }
+          
+           
+            
+            /*bottom container*/
+            #bottom-container{
+                margin-top: 8%;
+                justify-content: center;
+                width: 100%;
+                flex-direction: column;
+                margin-top: 0;
+                height: 20vh;
+            }
+        
+            #bottom-container img{
+                width: 30vh;
+            height: 15vh;
+            margin-top: -8%;
+            border: 2PX solid white;
+            border-radius: 4vh;
+            flex-direction: column;
+            margin-left: 27%;
+          
+        }
+        }
+
+    </style>
+</head>
+<body>
+<!--===== top container =======-->
+    <div id="top-container">
+        <!-- responsive web -->
+        <a href="https://aerbhert-san.github.io/online-resume/" id="response">
+            <img src="responsive_web.png">
+        </a>
+         <!-- calculator -->
+        <a href="https://aerbhert-san.github.io/Calculator-Application-/" id="calcu">
+            <img src="Calculator.png">
+        </a>
+    </div>
+<!--===== bottom container =====-->
+    <div id="bottom-container">
+        <!-- game -->
+        <a href="https://aerbhert-san.github.io/rock-paper-scissor/" id="game_design">
+            <img  src="rps.png">
+        </a>
+    </div>
+
+    <script>
+        //prevent to stop navigating new url
+        document.getElementById('response').addEventListener('click',function(event){
+            event.preventDefault();
+            var href=this.getAttribute('href');
+            window.top.location.href=href;
+        });
+        document.getElementById('calcu').addEventListener('click',function(event){
+            event.preventDefault();
+            var href=this.getAttribute('href');
+            window.top.location.href=href;
+        });
+        document.getElementById('game_design').addEventListener('click',function(event){
+            event.preventDefault();
+            var href=this.getAttribute('href');
+            window.top.location.href=href;
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repository</title>
+<!---------------------------------------- style ------------------------------------------------------->
+<style>
+    body,html{
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+    /*ito ung isang buo*/
+    #whole-container{
+           display:flex;
+            height: 100%;
+        }
+        
+/*for navigation*/
+        #right-container{
+            background-color: rgb(200, 200, 200);
+            height: 100vh;
+            width: 20%;
+            box-sizing: border-box;
+            display:flex;
+            flex-direction: column;
+            padding: 1%;
+
+         
+        }
+/*left container*/
+        .left-container{
+            background-color: black;
+            height: 100vh;
+            width: 80%;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            padding: 1%;
+            overflow: hidden;
+        
+        }
+            
+    /*i frame*/
+    iframe{
+        width: 100%;
+        height: 100%;
+        border: none;
+       
+      
+    }
+        /*navigation on right*/
+        nav{
+            box-sizing: border-box;
+        }
+/*navigation list*/
+        nav ul li a{
+            color: black;
+            font-size: 3vh;
+            font-family: Calibri;
+            text-decoration: none;
+        
+        
+        }
+        nav ul li{
+            list-style-type: none;
+            margin-top: 3vh;
+        }
+
+        nav ul li:hover{
+            background-color: rgba(133, 133, 133, 0.185);
+            width: 100%;
+        }
+        
+    /* for footer*/
+        footer {
+            text-align: center;
+            padding: 1vh;
+            background-color: #333;
+            color: #fff;
+            height: 5vh;
+        }
+
+/*=====================================responsive design=========================================*/
+        @media(max-width:600px){
+            
+            /*whole container*/
+            #whole-container{
+            height: 100%;
+             border: 1px solid greenyellow;
+             flex-direction: column;
+             
+             
+            }
+/*right container*/
+            #right-container{
+            box-sizing: border-box;
+           max-height: 20vh;
+           height: 10vh;
+           background-color: rgb(200, 200, 200);
+           width: 100%;
+           flex-direction: row;
+           order: -1;
+           justify-content: center;
+         
+
+        }
+   
+           
+    /*navigation list*/
+        nav ul{
+            flex-direction: row;
+            justify-content: space-between;
+            display: flex;
+            padding: 0;
+            margin: 0;
+
+        }
+        nav ul li{
+           margin-right: 0;
+           transition: background-color 0.3s;
+           display: inline;
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            padding: 1vh 2vh;
+            font-size: 2vh;
+            display: flex;
+            
+        }
+        nav ul li:hover{
+            width: auto;
+        }
+        
+       /*iframe contaents below*/
+        /*left container*/
+        .left-container{
+                box-sizing: border-box;
+                overflow: hidden;
+                width:100%;
+                display: flex;
+                height: 90%;
+            }
+       iframe{
+        width: 100%;
+        height: 100%;
+        border: none;
+       }
+     
+    }
+</style>
+</head>
+<body>
+<!--===============================whole container================================-->
+<div id="whole-container">
+<!----------------------------- left container ----------------------------------------->
+    <div class="left-container">
+        
+       
+        <iframe id="contentsbox" name="contentFrame" src="home.html" scrolling="no"></iframe>
+    </div>
+
+<!------------------------------- right side container ------------------->
+<div id="right-container">
+      <!----- navigation on right side ----->
+    <nav>
+        <ul id="navigation-right-side">
+            <li><a class="navigation-links" href="javascript:void(0);" onclick="loadContent('home.html')" >Home</a></li>
+            <li><a class="navigation-links" href="javascript:void(0);" onclick="loadContent('contact.html')" >Contact</a></li>
+            <li><a class="navigation-links" href="javascript:void(0);" onclick="loadContent('portfolio.html')" >Portfolio</a></li>
+            <li><a class="navigation-links" href="javascript:void(0);" onclick="loadContent('about.html')">About</a></li>
+            
+        </ul>
+    </nav>
+</div>
+</div>
+
+    <footer>
+       <p>&copy; Created by: Aerbhert John M. Sanchez</p>
+    </footer>
+    <script>
+        //loading page when using navigation bar
+        function loadContent(page){
+            document.getElementById('contentsbox').src=page;
+        }
+    </script>
+</body>
+</html> 

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+       
+        /*body*/
+        body,html{
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        background-color: black;
+    }
+     
+          /*main container*/
+          #about-main-container{
+           display:flex;
+            height: 100%;
+            width: 100%;
+            flex-direction: column;
+        }
+
+        #top-container{
+            background-color: black;
+            height: 15%;
+            width: 100%;
+            box-sizing: border-box;
+           
+        }
+
+/*=================bottom containeer=================*/
+        #bottom-container{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+            /*left container*/
+        #about-left-container ,
+        #about-right-container{
+            background-color: black;
+            height: 100vh;
+            width: 50%;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            padding: 1%;
+          
+        }
+       
+      
+
+
+
+
+
+/*first heading */
+        h1{
+            color: white;
+            text-align: center;
+            font-family: Arial;
+            font-size: 7vh;
+        }
+
+
+
+        /* left side texts*/
+        h2{
+            color: white;
+            text-align: left;
+            margin-top: 20%;
+            margin-left:20%;
+            font-size: 4vh;
+            font-family: Calibri;
+            font-weight: 100;
+        }
+           /* left side texts*/
+        h3{
+            color: white;
+            text-align: left;
+            margin-top:5%;
+            margin-left: 20%;
+            font-size: 3vh;
+            font-family: Calibri;
+            font-style: italic;
+            opacity: .9;
+        }
+
+        /*mga picture sa kaliwa*/
+        #left-side-pic-container{
+            display: flex;
+            justify-content:2vh space-between;
+            width: 40%;
+            margin-left: 16%;
+           
+        }
+        .picture-sa-kaliwa{
+            width: 14vh;
+            height: 14vh;
+            margin-right: 6vh;
+        }
+/*button container*/
+    .about-button_container{
+       display: flex;
+       justify-content:space-between ;
+       margin-top: 12%;
+       width: 80%;
+       margin-left: 4vh;
+        }    
+
+
+        /*buutons*/
+        .about-button_container button{
+            padding: 1px 10px;
+           justify-content: center;
+            width: 40%;
+            border: 3px solid white;
+            color: white;
+            background-color: black;
+            height: 6vh;
+            font-size: 2.5vh;
+            text-align: center;
+            border-radius: 4vh;
+            margin-right: .5vh;
+            margin-left: 7vh;
+            cursor: pointer;
+            flex: 0 0 auto;
+        }
+        #download_cv{
+            background-color: white;
+            border-color: black;
+            color: black;
+        }
+        #download_cv:hover{
+            background-color: rgb(171, 202, 235);
+            border:2px solid  rgb(171, 202, 235);
+            color: white;
+        }
+        #read-more:hover{
+            background-color: rgb(171, 202, 235);
+            border:2px solid  rgb(171, 202, 235);
+            color: white;
+        }
+
+
+
+        
+        /*right side picture*/
+        #pic_grad_class{
+            border: 4px solid white;
+            width: 78%;
+            height: 60%;
+           margin-left: 10%;
+           margin-top: 15%;
+        }
+
+/*==============responsive========================*/
+
+        @media(max-width:600px){
+            #about-main-container{
+            height: 100%;
+            width: 100%;
+            flex-direction: column;
+        }
+
+        /*top container*/
+        #top-container{
+            height: 10%;
+            width: 100%;
+
+           
+        }
+        /*first heading */
+        h1{
+            font-size: 4vh;
+        }
+            /*=================bottom containeer=================*/
+        #bottom-container{
+            width: 100%;
+            flex-direction: column;
+
+        }
+            /*left container*/
+        #about-left-container {
+            height: 70vh;
+            width: 100%;
+            box-sizing: border-box;
+            flex-direction: column;
+            padding: 1%;
+        }
+        #about-right-container{
+            order: -1;
+            height: 30vh;
+            width: 100%;
+            box-sizing: border-box;
+            flex-direction: column;
+            justify-content: center;
+          
+        }
+
+        /*mga text*/
+        h2,h3{
+            font-size: 2vh;
+        }
+        
+
+        
+        /*mga picture sa kaliwa*/
+        #left-side-pic-container{
+            display: flex;
+            justify-content:2vh space-between;
+            width: 100%;
+            margin-left: 16%;
+           
+        }
+        .picture-sa-kaliwa{
+            width: 5vh;
+            height: 5vh;
+          
+        }
+
+           
+        /*right side picture*/
+        #pic_grad_class{
+            border: 2px solid white;
+            width: 40%;
+            height: 80%;
+           margin-top: 15%;
+        }
+            
+        /*buutons*/
+        .about-button_container button{
+            padding: 1px 10px;
+           justify-content: center;
+            width: 30%;
+            border: 1px solid white;
+            height: 4vh;
+            font-size: 1.5vh;
+            flex: 0 0 auto;
+            margin-top: 1vh;
+        }   
+        .about-button_container{
+       justify-content:center;
+       margin-top: 10%;
+       width: 100%;
+       flex-direction: column;
+        }    
+        }
+
+
+    </style>
+</head>
+<body>
+<!--================== main container =======================-->
+    <div id="about-main-container">
+    <div id="top-container">
+        <h1>About Me</h1>
+    </div>
+
+    <div id="bottom-container">
+<!------------- left container -------------------->
+        <div id="about-left-container">
+            <!----- simula ----->
+            <h2> Hi, I'm Aerbhert John M.<br>
+                Sanchez, an IT student.
+            </h2>
+            <!-- ikalawa ung mahaba-->
+            <h3> Hello, I'm Aerbhert, I love art and<br>
+                programming. I'm currently studying<br>
+                in DLL and has a goal of obtaining<br>
+                more knowledge about<br>
+                programming.
+            </h3>
+<!-- mga image sa kaliwa-->
+        <div id="left-side-pic-container">
+        <a href="https://www.python.org" id="py_com">
+            <img class="picture-sa-kaliwa" src="py_pic.png">
+        </a>
+        <a href="https://code.visualstudio.com" id="vs_com">
+            <img class="picture-sa-kaliwa" src="vs_pic.png">
+        </a>
+        <a href="https://html.com" id="html_com">
+            <img class="picture-sa-kaliwa" src="html_pic.png">
+        </a>
+        </div>
+        <!-- buttons -->
+        <div  class="about-button_container">
+            <button id="read-more">Read More</button>
+            <button id="download_cv">Download CV</button>
+        </div>
+        </div>
+<!------------- right container-------------------->
+        <div id="about-right-container">
+            <img id="pic_grad_class" src="picture_grad.jpg">
+        </div>
+
+    </div>
+    </div>
+
+    <script>
+         //prevent to stop navigating new url
+         document.getElementById('py_com').addEventListener('click',function(event){
+            event.preventDefault();
+            var href=this.getAttribute('href');
+            window.top.location.href=href;
+        });
+         //prevent to stop navigating new url
+         document.getElementById('vs_com').addEventListener('click',function(event){
+            event.preventDefault();
+            var href=this.getAttribute('href');
+            window.top.location.href=href;
+        });
+         //prevent to stop navigating new url
+         document.getElementById('html_com').addEventListener('click',function(event){
+            event.preventDefault();
+            var href=this.getAttribute('href');
+            window.top.location.href=href;
+        });
+    </script>
+</body>
+</html>

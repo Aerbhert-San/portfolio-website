@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+
+        /*body*/
+       body,html{
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        background-color: black;
+    }
+
+        
+        /*main container*/
+        #home-main-container{
+           display:flex;
+            height: 100%;
+            width: 100%;
+        }
+        
+            /*left container*/
+        #home-left-container{
+            background-color: black;
+            height: 100vh;
+            width: 60%;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            padding: 1%;
+        
+        }
+       
+        
+        /*right contaoneer*/
+        #home-right-container{
+            background-color: black;
+            height: 100vh;
+            width: 60%;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            padding: 1%;
+            margin-left: 10%;
+        }
+         /*picture ko*/
+         img{
+            width: 50vh;
+            height: 50vh;
+            margin-top: 33%;
+            margin-left: 20%;
+            border: 4PX solid white;
+        }
+/* all in right*/        
+        .p1{
+            color: white;
+            margin-left: 10%;
+            margin-top: 10%;
+            font-family: Arial;
+            font-size: 4vh;
+            font-weight: 80;
+            opacity: .8;
+        }
+        h1{
+            color: white;
+            margin-left: 10%;
+            font-family: Calibri;
+            font-size: 7vh;
+            margin-top: 1%;
+           
+        }
+        h2{
+            color: white;
+            margin-left: 10%;
+            font-family: Calibri;
+            font-size: 4vh;
+            margin-top: -5%;
+            font-weight: 150;
+           
+        }
+        .p2{
+            color: white;
+            margin-left: 10%;
+            margin-top: 6%;
+            font-size: 3vh;
+            font-style: italic;
+            font-family: Calibri;
+        }
+
+        /*buttons*/
+
+    .button_container{
+       display: flex;
+       justify-content: space-between ;
+       margin-top: 12%;
+       width: 80%;
+      
+       
+    }    
+       .button_container button{
+            padding: 1px 10px;
+           justify-content: center;
+            width: 40%;
+            border: 3px solid white;
+            color: white;
+            background-color: black;
+            height: 6vh;
+            font-size: 2.5vh;
+            text-align: center;
+            border-radius: 4vh;
+            margin-right: .5vh;
+            margin-left: 5vh;
+            cursor: pointer;
+            flex: 0 0 auto;
+        }
+        #my_experience{
+            background-color: white;
+            border-color: black;
+            color: black;
+        }
+        #my_experience:hover{
+            background-color: rgb(171, 202, 235);
+            border:2px solid  rgb(171, 202, 235);
+            color: white;
+        }
+        #contact_me:hover{
+            background-color: rgb(171, 202, 235);
+            border:2px solid  rgb(171, 202, 235);
+            color: white;
+        }
+  
+
+    /*=======================responsive===================*/
+    @media(max-width:600px){
+              
+        /*main container*/
+        #home-main-container{
+            height: 100%;
+           flex-direction: column;
+        }
+
+         
+            /*left container*/
+            #home-left-container{
+            background-color: black;
+            height: 50vh;
+            width: 100%;
+            box-sizing: border-box;
+            flex-direction: column;
+            padding: 1%;
+            justify-content: center;
+        
+        }
+          /*picture ko*/
+          img{
+            width: 30vh;
+            height: 30vh;
+            margin-top: 12%;
+            margin-left: 10%;
+            border: 4PX solid white;
+        }
+
+           /*right contaoneer*/
+           #home-right-container{
+            box-sizing: border-box;
+                width:100%;
+                display: flex;
+                height: 90%;
+
+        }
+
+        /*all in right*/
+
+        .p1{
+            color: white;
+            margin-left: 10%;
+            margin-top: 10%;
+            font-family: Arial;
+            font-size: 2vh;
+            font-weight: 80;
+            opacity: .8;
+        }
+        h1{
+            color: white;
+            margin-left: 10%;
+            font-family: Calibri;
+            font-size: 3vh;
+            margin-top: 1%;
+           
+        }
+        h2{
+            color: white;
+            margin-left: 10%;
+            font-family: Calibri;
+            font-size: 2vh;
+            margin-top: -1%;
+            font-weight: 150;
+           
+        }
+        .p2{
+            color: white;
+            margin-left: 10%;
+            margin-top: 6%;
+            font-size: 2vh;
+            font-style: italic;
+            font-family: Calibri;
+        }
+
+/*======= button ===========*/
+
+        
+    .button_container{
+       margin-top: 10%;
+       width: 80%;
+       flex-direction: column;
+       margin-left: 10%;
+       justify-content: center;
+      
+       
+    }    
+        .button_container button{
+            padding: 1px 10px;
+           justify-content: center;
+            width: 60%;
+            border: 3px solid white;
+            color: white;
+            background-color: black;
+            height: 4vh;
+            font-size: 1.5vh;
+            text-align: center;
+            border-radius: 4vh;
+            cursor: pointer;
+          
+        }
+
+    }
+    </style>
+</head>
+<body>
+<!--================= whole containeer ==============================-->
+<div id="home-main-container">
+
+<!--------------------- picture ko sa kaliwa --------------------->
+    <div id="home-left-container">
+    <img src="my_picture.jpg">
+    </div>
+
+<!--------------------- mga nasa kanan --------------------------->
+    <div id="home-right-container">
+    <p class="p1">Hi I'm...</p>
+    <h1>Aerbhert Sanchez</h1>
+    <h2>an IT Student</h2>
+    <p class="p2">Hello, I love art and programming. I'm currently<br>
+        studying in DLL and has a goal of obtaining<br> 
+        more knowledge about programming.
+    </p>
+    <!--------- buttons ----------->
+<div  class="button_container">
+    <button id="contact_me">Contact Me</button>
+    <button id="my_experience">My experience</button>
+</div>
+
+
+    
+</div>
+
+</div>
+    
+</body>
+</html>
